@@ -75,3 +75,17 @@ $(document).ready(function () {
             $("ul#pizzass").append("<li>" + order.fullOrder() +"</li>");
   
         });
+        $(".pizza").last().click(function () {
+            $("#show-order").show();
+            $("#show-order h2").text(newPizza.fullName());
+            $("#show-order h2").text(newPizza.deliver);
+            // $("ul#pizzass").text("");
+            newPizza.orders.forEach(function (order) {
+                $("ul#pizzass").append("<li>" + newPizza.fullOrder + "</li>");
+  
+            });
+            $("#show-order h2").text(newPizza.orders);
+  
+  
+            });
+        });
