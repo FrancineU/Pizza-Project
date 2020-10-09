@@ -63,3 +63,6 @@ $(document).ready(function () {
             var newOrder = new Order(inputtedSize, inputtedTopping, inputtedCrust)
             newPizza.orders.push(newOrder)
         });
+        Pizza.prototype.fullName = function () {
+            return this.firstName + " " + this.lastName;
+        }
