@@ -25,5 +25,73 @@
     </nav>
     </header>
     
+
+
+    <div class="row" id="pizzaOrders" style="margin-top: 5%; margin-left: -10%;"  >
+            
+        <div class="col-md-8">
+            <form id="new-pizza" style="margin-left: 50%;">
+                <div class="form-group">
+                    <label for="new-first-name">First name</label>
+                    <input type="text" class="form-control" id="new-first-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="new-last-name">Last name</label>
+                    <input type="text" class="form-control" id="new-last-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="new-delivery">Delivery</label><!-- <label for="new-county">County</label> -->
+                    <select class="form-control new-delivery" required>
+                        <option>select </option>
+                        <option>yes</option>
+                        <option>no</option>
+                    </select>
+                </div>
+
+                <div id="new-orders">
+                    <div class="new-order">
+
+                        <div class="form-group">
+                            <label for="new-size">Size</label>
+                            <select class="form-control new-size">
+                                <option value="" disabled selected>select size</option>
+                                <option>small</option>
+                                <option>medium</option>
+                                <option>large</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="new-topping">topping</label>
+                            <select class="form-control new-topping">
+                                <option value="" disabled selected>select topping</option>
+                                <option>bacon</option>
+                                <option>mushrooms</option>
+                                <option>onions</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="new-crust">Crust</label>
+                            <select class="form-control new-crust">
+                                <option value="" disabled selected>select crust</option>
+                                <option>crispy</option>
+                                <option>stuffed</option>
+                                <option>gluten-free</option>
+                            </select>
+                        </div>
+
+                    </div>
+            
+             
+
+                <span class="btn btn-primary" id="add-order">Another order</span>
+
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+          </div>
+        </div>
 </body>
 </html>
