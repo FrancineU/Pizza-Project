@@ -48,3 +48,11 @@ $(document).ready(function () {
         this.topping = topping;
         this.crust = crust;
     };
+    $("form#new-pizza").submit(function (event) {
+        event.preventDefault();
+  
+        var inputtedFirstName = $("input#new-first-name").val();
+        var inputtedLastName = $("input#new-last-name").val();
+        var inputtedDeliverMode=$(".new-delivery").val();
+        var newPizza = new Pizza(inputtedFirstName, inputtedLastName, inputtedDeliverMode);
+  
