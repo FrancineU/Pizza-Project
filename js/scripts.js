@@ -69,3 +69,9 @@ $(document).ready(function () {
         Order.prototype.fullOrder = function () {
             return this.size + " ," + this.topping + " ," + this.crust;
         }
+        $("ul#names").append("<li><span class='order'>" + newPizza.fullName() + "</span></li>");
+        $("ul#deliver").append("<li><span class='order'>" + newPizza.deliver + "</span></li>");
+            newPizza.orders.forEach(function (order) {
+            $("ul#pizzass").append("<li>" + order.fullOrder() +"</li>");
+  
+        });
