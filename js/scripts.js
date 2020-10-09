@@ -37,3 +37,9 @@ $(document).ready(function () {
   
             '</div>');
     });
+    function Pizza(firstName, lastName, deliver) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.deliver=deliver
+        this.orders = [];
+    }
