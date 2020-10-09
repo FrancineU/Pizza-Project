@@ -66,3 +66,6 @@ $(document).ready(function () {
         Pizza.prototype.fullName = function () {
             return this.firstName + " " + this.lastName;
         }
+        Order.prototype.fullOrder = function () {
+            return this.size + " ," + this.topping + " ," + this.crust;
+        }
