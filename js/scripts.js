@@ -89,3 +89,11 @@ $(document).ready(function () {
   
             });
         });
+
+      $("input#new-first-name").val("");
+      $("input#new-last-name").val("");
+      $(".new-size").val("");
+      $(".new-topping").val("");
+      $(".new-crust").val("");
+
+  });
