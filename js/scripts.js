@@ -43,3 +43,8 @@ $(document).ready(function () {
         this.deliver=deliver
         this.orders = [];
     }
+    function Order(size, topping, crust) {
+        this.size = size;
+        this.topping = topping;
+        this.crust = crust;
+    };
