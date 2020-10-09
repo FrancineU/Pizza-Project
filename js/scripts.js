@@ -55,4 +55,11 @@ $(document).ready(function () {
         var inputtedLastName = $("input#new-last-name").val();
         var inputtedDeliverMode=$(".new-delivery").val();
         var newPizza = new Pizza(inputtedFirstName, inputtedLastName, inputtedDeliverMode);
-  
+        $(".new-order").each(function () {
+            // var inputtedSize = $(this).find('option:selected').attr("name");
+            var inputtedSize = $(this).find(".new-size").val();
+            var inputtedTopping = $(this).find(".new-topping").val();
+            var inputtedCrust = $(this).find(".new-crust").val();
+            var newOrder = new Order(inputtedSize, inputtedTopping, inputtedCrust)
+            newPizza.orders.push(newOrder)
+        });
